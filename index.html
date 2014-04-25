@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Colure | New Age of design process</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/jquery.jscrollpane.css">
+	<link rel="stylesheet" href="styles/animate.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+	<div class="container" id="wrap">
+		<header id="intro">
+			<img id="logo" src="img/logo.png"></img>
+			<h1 class="load">New age of your design process.</h1>
+			<p class="load">Colure is a new mobile application that generates color palette based on your project needs. All you need is describe your project, identify target audience and choose type of project and your color palette is just a tap away! Colure is always accurate and it understands you ot your client. You wouldn't be dissapointed.</p>
+			<button id="trial" class="load">free trial</button>
+			<button id="buy" class="load">buy now</button>
+		</header>
+		<img id="phone" src="img/iphone1.png">
+	</div>
+	<section id="pages">
+		<div class="container">
+			<h1 class="load fitText">Features</h1>
+			<div class="line"></div>
+			<div class="features load">				
+				<h3 id="time" class="fitText">Saves time</h3>
+				<p>The innovative algorithm helps you save lots of time spend on research and deep understanding of the topic. By just typing in a small amount of information, in just a few minutes you are getting a full and sophisticated summary based on millions of websites and colors databases.</p>
+			</div>
+			<div class="features load">
+				<h3 id="knows" class="fitText">Knows you</h3>
+				<p>The application has a unique analysis system. Based on the data given by the user it returns several accurate and case specific results. Each color set has a complete description and several example links. </p>
+			</div>
+			<div class="features load">
+				<h3 id="report" class="fitText">Reports it</h3>
+				<p>The system creates a full report for the chosen color set. This report is fully customizable with the "template editor" tool. The report system is multilingual and supports 6 languages. </p>
+			</div>
+		</div>
+		<div class="container testimonials">
+				<h1 class="load fitText">Testimonials say</h1>
+				<div class="line"></div>
+				<div class="quotes load">
+					<img src="img/richard.png">
+					<p>“I’m super impressed! Colure is what I was needed all my career path. When I heard about this app first time, I was certain that it is just another random color generator but in practice it knows exactly how to color my project. Bravo!”</p>
+					<h5 class="fitText">- Richard Fenner, Graphic Designer</h5>
+				</div>
+				<div class="quotes load">
+					<img src="img/cheryl.png">
+					<p>“Usually I don't trust technology like this but I like Colure's interface. It's simple and just user-friendly. I already forgot those days when I spend hours trying to find the right colors. Colure just does it for me while I drink tea. Good job.”</p>
+					<h5 class="fitText">- Cheryl Tuck, UX Designer</h5>
+				</div>
+			</div>
+	</section>
+	<footer class="container">
+		<ul id="menu">
+			<li><a id="contact_link" href="#">Contact us</a></li>
+			<li><a href="#">Facebook</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Instagram</a></li>
+		</ul>
+	</footer>
+	<div id="contact_form">
+		<div class="container">
+			<h1>Contact us</h1>
+			<img id="close" src="img/close.png">
+			<form id="form">	
+				<input type="text" name="name" id="name" placeholder="Your Name" />	
+				<input type="text" name="email" id="email" placeholder="your@mail.com" />		
+				<textarea name="text" placeholder="Place for message" /></textarea>
+				<input class="submit" type="submit" value="Send" />
+			</form>
+		</div>
+	</div>
+	<div id="shadow"></div>
+
+<script src="scripts/jquery-1.11.0.min.js"></script>
+<script src="scripts/viewportchecker.js"></script>
+<script src="scripts/jquery.fittext.js"></script>
+
+<script>
+$("#intro h1").fitText(0.8, { minFontSize: '15px', maxFontSize: '80px' });
+$("#intro p ").fitText(1.2, { minFontSize: '10px', maxFontSize: '30px' });
+$(".quotes p ").fitText(1.2, { minFontSize: '11px', maxFontSize: '25px' });
+$(".features p ").fitText(1.2, { minFontSize: '11px', maxFontSize: '25px' });
+$(".testimonials h1 ").fitText(1.2, { minFontSize: '15px', maxFontSize: '70px' });
+
+$(function(){
+	$('.load').addClass("hidden").viewportChecker({
+        classToAdd: 'visible animated fadeInUp',
+        offset: 100
+       });
+});
+</script>
+</body>
+</html>
