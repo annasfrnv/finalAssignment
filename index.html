@@ -26,7 +26,7 @@
 			<div class="line"></div>
 			<div class="features load">				
 				<h3 id="time" class="fitText">Saves time</h3>
-				<p>The innovative algorithm helps you save lots of time spend on research and deep understanding of the topic. By just typing in a small amount of information, in just a few minutes you are getting a full and sophisticated summary based on millions of websites and colors databases.</p>
+				<p>The innovative algorithm helps you save lots of time spend on research and deep understanding of the topic. In just a few minutes you are getting a full and sophisticated summary based on millions of websites and colors databases.</p>
 			</div>
 			<div class="features load">
 				<h3 id="knows" class="fitText">Knows you</h3>
@@ -66,7 +66,7 @@
 			<img id="close" src="img/close.png">
 			<form id="form">	
 				<input type="text" name="name" id="name" placeholder="Your Name" />	
-				<input type="text" name="email" id="email" placeholder="your@mail.com" />		
+				<input type="text" name="email" id="email" placeholder="your@mail.com" />
 				<textarea name="text" placeholder="Place for message" /></textarea>
 				<input class="submit" type="submit" value="Send" />
 			</form>
@@ -77,13 +77,14 @@
 <script src="scripts/jquery-1.11.0.min.js"></script>
 <script src="scripts/viewportchecker.js"></script>
 <script src="scripts/jquery.fittext.js"></script>
+<script src="scripts/script.js"></script>
 
 <script>
 $("#intro h1").fitText(0.8, { minFontSize: '15px', maxFontSize: '80px' });
 $("#intro p ").fitText(1.2, { minFontSize: '10px', maxFontSize: '30px' });
 $(".quotes p ").fitText(1.2, { minFontSize: '11px', maxFontSize: '25px' });
 $(".features p ").fitText(1.2, { minFontSize: '11px', maxFontSize: '25px' });
-$(".testimonials h1 ").fitText(1.2, { minFontSize: '15px', maxFontSize: '70px' });
+$(".testimonials h1 ").fitText(1.2, { minFontSize: '15px', maxFontSize: '70px'});
 
 $(function(){
 	$('.load').addClass("hidden").viewportChecker({
